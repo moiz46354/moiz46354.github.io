@@ -99,7 +99,9 @@
 
 // })(jQuery);
 
-
+document.querySelector('.holo-scroll').addEventListener('click', function () {
+    document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
+  });
 document.addEventListener('DOMContentLoaded', function () {
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
